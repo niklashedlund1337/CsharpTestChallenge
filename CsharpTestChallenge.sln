@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAPI", "DataAPI\DataAPI.csproj", "{D2E2CF59-4C35-4A68-B0C5-0133297AF686}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAPI.Tests", "DataAPI.Tests\DataAPI.Tests.csproj", "{37A75105-91D1-4D80-8C28-A9B693BF5F25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2E2CF59-4C35-4A68-B0C5-0133297AF686}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2E2CF59-4C35-4A68-B0C5-0133297AF686}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2E2CF59-4C35-4A68-B0C5-0133297AF686}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2E2CF59-4C35-4A68-B0C5-0133297AF686}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37A75105-91D1-4D80-8C28-A9B693BF5F25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37A75105-91D1-4D80-8C28-A9B693BF5F25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37A75105-91D1-4D80-8C28-A9B693BF5F25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37A75105-91D1-4D80-8C28-A9B693BF5F25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
