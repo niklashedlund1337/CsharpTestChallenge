@@ -11,8 +11,8 @@ public class EmployeeRepositoryTests
     public async Task List_WithEmptyData_ReturnsZeroCount()
     {
         //Arrange
-        var apiHelper = new ApiHelperMock(new List<Employee>());
-        var employeeRepository = new EmployeeRepository(apiHelper);
+        var apiDataClient = new ApiDataClientMock(new List<Employee>());
+        var employeeRepository = new EmployeeRepository(apiDataClient);
 
         //Act
         var actual = await employeeRepository.List();

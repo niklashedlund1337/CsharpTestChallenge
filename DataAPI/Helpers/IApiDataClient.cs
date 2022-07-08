@@ -2,7 +2,7 @@ using DataAPI.Models;
 
 namespace DataAPI.Helpers;
 
-public interface IApiHelper
+public interface IApiDataClient
 {
     Task<List<Employee>?> GetEmployees();
 }

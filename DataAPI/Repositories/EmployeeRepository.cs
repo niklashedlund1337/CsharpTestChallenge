@@ -5,24 +5,15 @@ namespace DataAPI.Repositories;
 
 public class EmployeeRepository : IEmployeeRepository
 {
-    private readonly IApiHelper _apiHelper;
-    private List<Employee>? _employees;
-
-    public EmployeeRepository(IApiHelper apiHelper)
+    private readonly IApiDataClient _apiDataClient;
+    
+    public EmployeeRepository(IApiDataClient apiDataClient)
     {
-        _apiHelper = apiHelper;
+        _apiDataClient = apiDataClient;
     }
     
     public async Task<IEnumerable<Employee>?> List()
     {
-        if (_employees == null)
-            await GetEmployees();
-        
-        return _employees;
-    }
-
-    private async Task GetEmployees()
-    {
-        _employees = await _apiHelper.GetEmployees();
+        return await _apiDataClient.GetEmployees();
     }
 }
